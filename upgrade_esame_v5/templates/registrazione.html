@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-4">Registrati</h2>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="mb-3">
+                {{ form.nome.label(class="form-label") }}
+                {{ form.nome(class="form-control") }}
+                {% if form.nome.errors %}
+                    <div class="text-danger">{{ form.nome.errors[0] }}</div>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.cognome.label(class="form-label") }}
+                {{ form.cognome(class="form-control") }}
+                {% if form.cognome.errors %}
+                    <div class="text-danger">{{ form.cognome.errors[0] }}</div>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-control") }}
+                {% if form.email.errors %}
+                    <div class="text-danger">{{ form.email.errors[0] }}</div>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.password.label(class="form-label") }}
+                {{ form.password(class="form-control") }}
+                {% if form.password.errors %}
+                    <div class="text-danger">{{ form.password.errors[0] }}</div>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.confirm_password.label(class="form-label") }}
+                {{ form.confirm_password(class="form-control") }}
+                {% if form.confirm_password.errors %}
+                    <div class="text-danger">{{ form.confirm_password.errors[0] }}</div>
+                {% endif %}
+            </div>
+            <div class="mb-3">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

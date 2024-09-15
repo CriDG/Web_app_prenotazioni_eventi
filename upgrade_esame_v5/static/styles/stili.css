@@ -1,0 +1,95 @@
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer p, footer a {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-subtitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-image {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Assicura che gli elementi si adattino a schermi piccoli */
+}
+
+footer .container div {
+    flex: 1; /* Permette al contenitore di occupare lo spazio disponibile */
+}
+
+footer .container img {
+    flex: 0 0 auto; /* L'immagine mantiene la sua dimensione e non si ridimensiona */
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+
+.tm-video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.tm-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Stile per il contenuto */
+.tm-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white; /* Cambia il colore del testo per renderlo visibile sul video di sfondo */
+}
+
+/* Altro stile personalizzato */
+.alert {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo semitrasparente per la visibilità */
+    display: inline-block;
+}
+
+
+.icon-white {
+    color: white;
+}
+
+.card-img-top {
+    width: 100%; /* Imposta la larghezza al 100% della card */
+    height: auto; /* Mantieni le proporzioni originali */
+    max-height: 300px; /* Imposta un'altezza massima per le immagini */
+    object-fit: cover; /* Ritaglia l'immagine se necessario per adattarla */
+}
