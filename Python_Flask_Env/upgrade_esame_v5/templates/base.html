@@ -24,7 +24,7 @@
             <!-- Logo che rimanda alla homepage -->
             <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index') }}">
                 Spettacoli in crociera
-                <img src="static/images/nave.jpg" style="width:100px;" class="rounded-pill ms-8">
+                <img src="{{ url_for('static', filename='images/nave.jpg') }}" style="width:100px;" class="rounded-pill ms-8">
             </a>
             
             <!-- Bottone (x toggle) della navbar sui dispositivi mobili -->
