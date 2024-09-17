@@ -5,7 +5,8 @@
 
 <!-- Sovrascrive il contenuto del blocco 'content' definito nel template base -->
 {% block content %}
-<h1 class="mb-4 text-center">Spettacoli in crociera</h1>
+<h1 class="mb-4 text-center font-effect-neon" style="font-family: 'Sofia', sans-serif; color: #FFFF99;  text-shadow: 0 0 10px #FFEF00, 0 0 20px #FFEF00, 0 0 30px #FFEF00, 0 0 40px #FFEF00;"> 
+    Spettacoli in crociera</h1>
 
 <!-- Controlla se l'utente è loggato e mostra un messaggio di benvenuto o invita a loggarsi -->
 {% if session.get('user_id') %}

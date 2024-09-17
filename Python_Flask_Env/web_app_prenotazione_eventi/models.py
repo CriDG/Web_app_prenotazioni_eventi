@@ -8,8 +8,7 @@ import json
 
 db = SQLAlchemy()
 
-#Le relazioni tra le tabelle vengono definite usando db.relationship e db.ForeignKey. Questo è il modo in cui SQLAlchemy (l'ORM utilizzato) stabilisce le connessioni tra le diverse tabelle.
-#
+
 class Locale(db.Model, SerializerMixin):
     __tablename__ = 'locali'
     id = db.Column(db.Integer, primary_key=True)  
@@ -25,7 +24,7 @@ class Locale(db.Model, SerializerMixin):
 class Evento(db.Model, SerializerMixin):
     __tablename__ = 'eventi'
     id = db.Column(db.Integer, primary_key=True)  
-    locale_id = db.Column(db.Integer, db.ForeignKey('locali.id'), nullable=False) # FK indica che ogni evento e associato a un locae spcifico!
+    locale_id = db.Column(db.Integer, db.ForeignKey('locali.id'), nullable=False) 
     nome_evento = db.Column(db.String(50), nullable=False)  
     image_url = db.Column(db.String(255), nullable=True)
 

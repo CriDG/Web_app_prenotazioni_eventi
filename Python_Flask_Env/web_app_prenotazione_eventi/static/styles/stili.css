@@ -1,11 +1,32 @@
+
 .navbar-nav .nav-link {
     font-weight: bold;
     font-style: italic;
 }
 
+.navbar-gradient {
+    background: linear-gradient(to right,
+    #b2ffb2,  
+    #7fdb7f,   
+    #32cd32,   
+    #228b22,   
+    #006400    
+);
+}
+
 footer p, footer a {
     font-weight: bold;
     font-style: italic;
+}
+
+.footer-gradient {
+    background: linear-gradient(to bottom,
+    #b2ffb2,   
+    #7fdb7f,   
+    #32cd32,   
+    #228b22,   
+    #006400    
+);
 }
 
 .card-title {
@@ -47,6 +68,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Sofia", sans-serif;
+
 }
 main {
     flex: 1;
@@ -76,7 +99,7 @@ main {
     color: white; /* Cambia il colore del testo per renderlo visibile sul video di sfondo */
 }
 
-/* Altro stile personalizzato */
+
 .alert {
     background-color: rgba(255, 255, 255, 0.8); /* Sfondo semitrasparente per la visibilità */
     display: inline-block;
