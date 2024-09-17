@@ -1,5 +1,9 @@
 {
     "python.analysis.extraPaths": [
-        "./Python_Flask_Env/upgrade_esame_v5"
+        "./Python_Flask_Env/upgrade_esame_v5",
+        "./Python_Flask_Env/web_app_prenotazione_eventi",
+        "./Python_Flask_Env/web_app_prenotazione_eventi",
+        "./Python_Flask_Env/web_app_prenotazione_eventi",
+        "./Python_Flask_Env/web_app_prenotazione_eventi"
     ]
 }

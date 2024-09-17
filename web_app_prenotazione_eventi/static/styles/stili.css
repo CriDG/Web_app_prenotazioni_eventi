@@ -1,0 +1,124 @@
+/* Navbar */
+.navbar-gradient {
+    background: linear-gradient(to right,
+    #b2ffb2,  
+    #7fdb7f,   
+    #32cd32,   
+    #228b22,   
+    #006400    
+);
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sofia", sans-serif;
+}
+
+/* Main */
+main {
+    flex: 1;
+}
+
+/* Video Wrapper */
+.tm-video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.tm-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container Style */
+.tm-container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+}
+
+/* Alerts */
+.alert {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+}
+
+/* Cards */
+.card-title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-subtitle {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px;
+    object-fit: cover; 
+}
+
+/* Icons */
+.icon-white {
+    color: white;
+}
+
+/* Footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Assicura che gli elementi si adattino a schermi piccoli */
+}
+
+footer .container div {
+    flex: 1; /* Permette al contenitore di occupare lo spazio disponibile */
+}
+
+footer .container img {
+    flex: 0 0 auto; /* L'immagine mantiene la sua dimensione e non si ridimensiona */
+}
+
+footer p, footer a {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-gradient {
+    background: linear-gradient(to bottom,
+    #b2ffb2,   
+    #7fdb7f,   
+    #32cd32,   
+    #228b22,   
+    #006400    
+);
+}
+
+.footer-image {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
